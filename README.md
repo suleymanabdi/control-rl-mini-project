@@ -33,9 +33,7 @@ The objectives of this project are to:
 
 The system state is defined as:
 
-\[
-x = [x,\ \dot{x},\ \theta,\ \dot{\theta}]
-\]
+x = [x, x_dot, theta, theta_dot]
 
 where:
 - \(x\) is the cart position  
@@ -45,9 +43,7 @@ where:
 
 ### 3.3 Control Input
 
-\[
-u \in \mathbb{R}
-\]
+u ∈ ℝ
 
 The control input is bounded.
 
@@ -57,9 +53,7 @@ The control input is bounded.
 
 The system dynamics are nonlinear and continuous-time:
 
-\[
-\dot{x} = f(x, u)
-\]
+x_dot = f(x, u)
 
 A nominal model is assumed available for baseline control design, while the learning-based controller operates without direct access to the model during execution.
 
